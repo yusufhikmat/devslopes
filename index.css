@@ -1,0 +1,241 @@
+/*#### default style#####*/
+*{
+   box-sizing: border-box; 
+}
+body{
+    line-height: 1;
+    margin: 0;
+    max-width: 100%;
+}
+
+nav,
+header,
+footer{
+    display: block;
+}
+
+/*## nav style ##*/
+nav{
+    width:100%;
+    margin: 0;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+    overflow: hidden;
+}
+ ul.topnav li{
+    list-style-type: none;
+    float: left;
+} 
+ul.topnav li.topnav_right{
+    float:right;
+}
+ul.topnav li a{
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin: 0;
+    display: block;
+    color:green;
+    
+}
+ul.topnav li a:hover{
+    background-color: bisque;
+    color:black;
+}
+ul.topnav li.dropdownIcon{
+    display: none;
+}
+
+/* section-1- container content*/
+
+.container{
+    width:100%;
+    margin: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+.row{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.row::after{
+    content: "";
+    display:table;
+    clear:both;
+
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+#grad{
+    background-image: linear-gradient(lightblue, white);
+
+}
+h1.large{
+    font-size: 56px;
+    line-height: 70px;
+    color: black;
+    text-transform: capitalize;
+    margin: 0;
+    
+}
+input[type=text]{
+    font-size: 20px;
+    padding: 3px;
+    color: pink;
+    margin: 0;
+    width:400px;
+    border-radius: 8px;
+
+}
+.largecontent{
+    margin-left:20%;
+}
+.formcontent{
+    margin-left: 20%;
+}
+.iframecontent{
+    margin-left: 5%;
+    margin-top: 5%;
+}
+input[type=text]:hover{
+    border: 2px solid purple;
+}
+/* section-2 header */
+header h2{
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 50px;
+}
+/* This is section-3 container style, it is a box styling*/
+div.box{
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 0 1px rgba(0,0,0,.15),
+                0 2px 3px rgba(0,0,0,.1);
+    padding:20px;
+    margin: 10px;
+}
+div.iconImage{
+    width: 100%;
+}
+label{
+    font-weight: 600;
+    font-size: 25px;
+}
+p.iconparagraph{
+    line-height: 1.5rem;
+    font-size: 20px;
+}
+div.learnmore{
+    margin: auto;
+    
+}
+button{
+    color:white;
+    background-color: lightblue;
+    font-weight: 700px;
+    font-size: 30px;
+    padding: 15px 60px;
+    text-align: center;
+    display:block;
+    margin:5px;
+    border:none;
+    border-radius: 8px;
+    
+}
+button.learnMore{
+    margin:auto;
+}
+footer.pageOneFooter{
+    background-color: #666;
+    padding-left:10%;
+}
+footer.pageOneFooter h1{
+    color:white;
+}
+footer.pageOneFooter ul{
+    float:left;
+    padding-left: 0;
+    list-style-type: none;
+}
+footer.pageOneFooter ul li{
+    line-height: 1.5rem;
+    color:white;
+
+}
+footer.pageOneFooter ul li:hover{
+    color:yellow;
+}
+
+
+/*#### mobile responsiveness####*/
+@media screen and (max-width:680px){
+    ul.topnav li:not(:nth-child(1)){
+        display: none;
+    }
+
+    ul.topnav li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    ul.topnav.responsive li.dropdownIcon{
+        position: absolute;
+        top: 0;
+        right: 0;
+
+    }
+    ul.topnav.responsive{
+        position: relative;
+    }
+    ul.topnav.responsive li{
+        display: inline;
+        float: none;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+    .col-4,
+    .col-6{
+        width: 100%;
+        margin: 0px;
+    }
+    /*form*/
+    input[type=text]{
+        width: 100%;
+    }
+    div.footerstack{
+        width: 50%;
+        display:block;
+        padding-left: 5%;
+    }
+    h1.large{
+        font-size: 45px;
+    }
+    div.iframecontent iframe{
+        width: 100%;
+    }
+    div.largecontent,
+    div.formcontent,
+    div.iframecontent{
+    margin: 15px;
+} 
+
+}
+

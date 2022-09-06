@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>My first responsive nav bar</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="topnav" id="dropdownMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#home">About</a></li>
+                <li><a href="#home">news</a></li>
+                <li><a href="#home">project</a></li>
+                <li class="topnav_right"><a href="#home">signup</a></li>
+                <li class="topnav_right"><a href="#home">signin</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);"
+                    onclick="dropdownClick()"
+                    >&#9776;</a></li>
+            </ul>
+        </nav>
+
+            <!-----content-->
+            <div class="container" id="grad">
+                <div class="row">
+                    <div class="col-6 contentsection">
+                        <div class="largecontent">
+                            <h1 class="large">Crazy Radness</h1>
+                            <h1 class="large">Made for Devslope</h1>
+                        </div>
+                        <form>
+                            <div class="formcontent">
+                                <h2>Username:</h2>
+                                <input type="text"class="inputbox" placeholder="username">
+                                <h2>password:</h2>
+                                <input type="text"class="inputbox" placeholder="password">
+                                
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-6 iframesection">
+                        <div class="iframecontent">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/YcMJLdx1OHg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+                <!-----section 2-->
+            <header>
+                        <h2>The standard of awesome</h2>        
+            </header>
+            <!-----section 3-->
+            <div class="container">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="box">
+                            <div class="iconImage">
+                                <img src="images/home1.jpg" alt="myImage">
+                            </div>
+                                <label>Chat with me</label>
+                                <p class="iconParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                            <div class="iconImage">
+                                <img src="images/home1.jpg" alt="myImage">
+                            </div>
+                                <label>Chat with me</label>
+                                <p class="iconParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+
+                    </div>
+                    <div class="col-4">
+                        <div class="box">
+                            <div class="iconImage">
+                                <img src="images/home1.jpg" alt="myImage">
+                            </div>
+                                <label>Chat with me</label>
+                                <p class="iconParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button class="learnMore">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <footer class="pageOneFooter">
+                <div class="row">
+                    <div class="col-3 footerstack">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>home</li>
+                            <li>home</li>
+
+                            <li>home</li>
+                            <li>home</li>
+                            <li>home</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 footerstack">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>home</li>
+                            <li>home</li>
+
+                            <li>home</li>
+                            <li>home</li>
+                            <li>home</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 footerstack">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>home</li>
+                            <li>home</li>
+
+                            <li>home</li>
+                            <li>home</li>
+                            <li>home</li>
+                        </ul>
+                    </div>
+                    <div class="col-3 footerstack">
+                        <h1>Company</h1>
+                        <ul>
+                            <li>home</li>
+                            <li>home</li>
+
+                            <li>home</li>
+                            <li>home</li>
+                            <li>home</li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+
+
+        <script>
+            function dropdownClick(){
+                var x = document.getElementById("dropdownMenu");
+                if (x.className === "topnav"){
+                    x.className += " responsive";
+                }else{
+                    x.className = "topnav";
+                 }
+            }
+           
+        </script>
+    </body>
+
+</html>
